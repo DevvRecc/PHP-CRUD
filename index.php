@@ -37,7 +37,7 @@ include'includes/database.php';
                     echo "<tr>";
                     echo "<td style=\"color: white;\">{$student['student_naam']}</td>";
                     echo "<td style=\"color: white;\"> {$student['klas']} </td>";
-                    echo "<td style=\"color: white;\"> {$student['minuten_te_laat']}</td>";
+                    echo "<td style=\"color: red;\"> {$student['minuten_te_laat']}</td>";
                     echo "<td style=\"color: white;\"> {$student['reden_te_laat']}</td>";    
                     echo "<td><a class='btn btn-success' onClick=return confirm(\"Weet je zeker dat je het wilt verwijderen?\"); href='delete.php?id={$student['id']}'>Verwijder</a></td>";
                     echo "<td><a class='btn btn-success' href='update.php?id={$student['id']}'>Update</a></td>";
